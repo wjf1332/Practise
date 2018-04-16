@@ -1,11 +1,11 @@
 #include "demo.h"
 //--------------------------------------
-// Version:		v1.0
-// Data:	2018.4.16   12:31
+// Version:		v1.1
+// Data:	2018.4.16   12:48
 //--------------------------------------
 void i2c_demo(void)
 {
-#define SIZE		8
+	#define SIZE		8
 	U8 i = 0;
 	U8 sBuf[SIZE] = {0x00,0x01,0x02,0x03,0x04,0x05,0x06,0x07};
 	U8 rBuf[SIZE];
