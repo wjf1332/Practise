@@ -28,7 +28,8 @@ void i2c_demo(void)
 				while(1);
 			}
 		}
-		LED1_FLIP;
-		UART_SendHex((U8*)rBuf,0x08);
+		//UART_SendHex((U8*)rBuf,0x08);
+		//这个添加串口发送
+		UART_SendHex((U8*)rBuf,0x02);
 	}
 }
