@@ -1,4 +1,4 @@
-## 
+# **Git的使用笔记**
 - config --global user.name "Your Name" 
 - config --global user.email "email@example.com"
     > --global表示本机器所有的仓库都使用该配置
