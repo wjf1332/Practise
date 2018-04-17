@@ -43,6 +43,32 @@
 - rm
     > 从版本库中删除文件
 
+## 远程操作
+- GitHub
+### 创建SSH Key
+1. Git Bash
+    > 打开Git Bash之后，通过输入ssh-keygen -t rsa -C "youremail@example.com"
+    创建密钥
+    >
+    >会在用户主目录，生成.ssh目录，里面包括RSA公钥和私钥
+2. Github
+    > 登录之后，在Account settings中找到Add SSH Key。输入title之后，将你的公钥内容复制到相应位置去
+
+### 常用的命令
+- remote
+    > 在github上创建新仓库之后，通过该命令将本地仓库和新仓库关联，随后推送
+    >
+    > git remote add origin git@github.com:michaelliao/learngit.git
+    >(后面的地址，在github上复制一下即可)
+    > origin是远程库的名称，可以修改
+
+- push
+    -git push -u origin master
+        > 第一次推送，添加-u参数，推送+关联。此时，远程库和本地库内容就一样了。
+
+    - git push origin master
+        > 以后，只要本地提交，那么就可以通过该命令推送到github了
+
 
 
 
